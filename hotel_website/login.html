@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Łódżtel - Login</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <h1>Łódźtel</h1>
+          <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Rejestracja</a></li>
+            <li><a href="book.html">Pokoje</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="form-container">
+          <h2>Zaloguj się</h2>
+          <form id="loginForm" action="php/login.php" method="POST">
+            <div class="form-group">
+              <label for="username">Nazwa:</label>
+              <input type="text" id="username" name="username" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Hasło:</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <button type="submit" class="btn">Login</button>
+          </form>
+          <p>
+            Nie posiadasz konta?
+            <a href="register.html">Zarejestruj się tutaj</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Łódźtel. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
